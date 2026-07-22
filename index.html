@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors game</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+     <div class="input_image_container">
+        <label for="image">📁 Choose Image</label>
+        <input type="file" accept="image/*" id="image">
+        <button>upload</button>
+    </div>
+
+    <div class="game_container">
+    <div class="header-section">
+         <h2>rock paper scissors</h2>
+         <button class="change-mode">dark Mode</button>
+    </div>
+
+    <!-- choices name class are display indiviusal image for rock paper and scissors-->
+    <div class="choices">
+        <div class="choice" id="rock">
+                <img src="./src/rock.png">
+        </div>
+        <div class="choice" id="paper">
+                <img src="./src/paper.png">
+        </div>
+        <div class="choice" id="scissors">
+                <img src="./src/scissors.png">
+        </div>
+    </div>
+
+    <!-- add score-borad this borad track user and computer score -->
+     <div class="score-board">
+        <div class="user">
+            <p id="youScore">0</p>
+            <div><img src="#" alt="user"></div>
+        </div>
+        <div class="computer">
+            <p id="compScore">0</p>
+            <div><img src="src/me.jpeg" alt="user"></div>
+        </div>
+    </div>
+
+    <!--msg container name class is used to track user choice and computer choice -->
+
+    <div class="msg-container">
+        <p class="msg">play the game</p>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
